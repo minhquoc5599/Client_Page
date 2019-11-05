@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "builds": [
+	{ "src": "package.json", "use": "@now/static-build"},
+	{ "src": "./index.js", "use": "@now/node-server" },
+	{ "src": "./routes/index.js", "use": "@now/node-server" },
+	{ "src": "./app.js", "use": "@now/node-server" },
+    {"src": "./routes/*.js", "use": "@now/node-server" }
+    ],
+    "routes": [
+        { "src": "/", "dest": "./routes/index.js" },
+        { "src": "/compair", "dest": "/" },
+        { "src": "/contact", "dest": "/" },
+        { "src": "/edit_profie", "dest": "/" },
+        { "src": "/faq", "dest": "/" },
+        { "src": "/forgetpass", "dest": "/" },
+        { "src": "/legal_notice", "dest": "/" },
+        { "src": "/login", "dest": "/" },
+        { "src": "/product-details", "dest": "/" },
+        { "src": "/product-summary", "dest": "/" },
+        { "src": "/products", "dest": "/" },
+        { "src": "/purchase_history", "dest": "/" },
+        { "src": "/register", "dest": "/" },
+        { "src": "/special_offer", "dest": "/" },
+        { "src": "/tac", "dest": "/" } 
+    ]
+}
